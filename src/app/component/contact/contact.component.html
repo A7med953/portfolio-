@@ -1,0 +1,75 @@
+<section id="contact" class="py-5 text-white">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-3">Get In Touch</h2>
+    <div class="line mx-auto mb-5"></div>
+
+    <div class="row g-5 align-items-center">
+      <div class="col-md-6 text-start">
+        <h3 class="fw-semibold mb-3">Let's Work Together</h3>
+        <p class="text-light-emphasis mb-4">
+          I'm always interested in hearing about new projects and opportunities.  
+          Whether you have a question or just want to say hi, feel free to reach out!
+        </p>
+
+        <div class="d-flex align-items-start mb-4">
+          <div class="icon-box me-3">
+            <i class="fa-regular fa-envelope text-primary fs-4"></i>
+          </div>
+          <div>
+            <h5 class="fw-semibold mb-1">Email</h5>
+            <p class="text-light">a7md1elsayed&#64;gmail.com</p>
+
+
+          </div>
+        </div>
+
+        <div class="d-flex align-items-start mb-4">
+          <div class="icon-box me-3">
+            <i class="fa-solid fa-phone text-primary fs-4"></i>
+          </div>
+          <div>
+            <h5 class="fw-semibold mb-1">Phone</h5>
+            <p class="text-white">01022499146</p>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-start">
+          <div class="icon-box me-3">
+            <i class="fa-solid fa-location-dot text-primary fs-4"></i>
+          </div>
+          <div>
+            <h5 class="fw-semibold mb-1">Location</h5>
+            <p class="text-white">New Damietta, Damietta, Egypt</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <div class="card bg-secondary border-0 shadow p-4">
+<form (submit)="sendEmail($event)">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" name="from_name" id="name" class="form-control" required  placeholder="Name"/>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" name="from_email" id="email" class="form-control" required placeholder=" Email" />
+  </div>
+
+  <div class="mb-3">
+    <label for="message" class="form-label">Message</label>
+    <textarea name="message" id="message" rows="5" class="form-control" required placeholder="Text ..."></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary w-100">Send Message</button>
+</form>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</section>

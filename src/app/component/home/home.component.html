@@ -1,0 +1,120 @@
+<section class="vh-100 d-flex align-items-center justify-content-center text-center bg-dark" id="home">
+  <div class="container position-relative">
+    <div class="row w-100 align-items-center">
+
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+        <h1 class="fw-bold mb-3 text-white">Ahmed Elsayed</h1>
+        <h4 class="text-primary mb-3 fs-3">Frontend Angular Developer</h4>
+        <p class="fs-4 text-white">
+          I build modern and scalable web applications using Angular,
+          TypeScript, and the latest frontend technologies with a strong focus
+          on clean code, performance, and user experience.
+        </p>
+
+  
+        <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+         
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#certificatesModal"
+          >
+            <i class="fa-solid fa-award"></i> View Certificates
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-outline-light"
+            data-bs-toggle="modal"
+            data-bs-target="#cvModal"
+          >
+            <i class="fa-regular fa-file-pdf"></i> Download CV
+          </button>
+        </div>
+
+        <div class="mt-4 d-flex justify-content-center gap-4 fs-3 text-white">
+          <a href="https://www.linkedin.com/in/ahmed-elsayed-327b4031a/" target="_blank" class="text-white">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:a7md1elsayed@gmail.com" class="text-white">
+            <i class="fa-regular fa-at"></i>
+          </a>
+          <a href="https://github.com/A7med953" target="_blank" class="text-white">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-6 d-none d-lg-flex justify-content-center">
+        <img
+          src="/IMG_20230422_022841_227.jpg"
+          alt="Ahmed Elsayed"
+          class="img-fluid rounded-circle shadow-lg"
+         
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div
+  class="modal fade"
+  id="cvModal"
+  tabindex="-1"
+  aria-labelledby="cvModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white text-center">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="cvModalLabel">CV Options</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <p>Choose how you want to access my CV:</p>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+          <a href="/cv.pdf" target="_blank" class="btn btn-primary">👁️ View</a>
+          <a href="/cv.pdf" download class="btn btn-outline-light">💾 Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ✅ مودال عرض الشهادات -->
+<div
+  class="modal fade"
+  id="certificatesModal"
+  tabindex="-1"
+  aria-labelledby="certificatesModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-white text-center">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="certificatesModalLabel">My Certificates</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+
+          <div class="col-md-6">
+            <img src="/iti.jpg" alt="ITI Certificate" class="img-fluid rounded shadow" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

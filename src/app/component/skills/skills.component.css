@@ -1,7 +1,7 @@
-section{
-        background-color: #05162a;
-
+section {
+  background-color: #05162a;
 }
+
 .section-title {
   position: relative;
   display: inline-block;
@@ -18,12 +18,30 @@ section{
   border-radius: 2px;
 }
 
-.progress {
-
-  border-radius: 5px;
-  overflow: hidden;
+/* New Coordinated Skill Badges */
+.skill-badge {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  cursor: default;
 }
 
-.progress-bar {
-  transition: width 1s ease-in-out;
+.skill-badge:hover {
+  background-color: rgba(13, 110, 253, 0.2);
+  border-color: #0d6efd;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skill-badge i {
+  font-size: 1.2rem;
+}
+
+.skill-badge span {
+  font-size: 1rem;
+  font-weight: 500;
 }

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 interface Experience {
   title: string;
   company: string;
@@ -7,37 +8,47 @@ interface Experience {
   description: string;
   technologies: string[];
 }
+
 @Component({
   selector: 'app-experiece',
   imports: [CommonModule],
   templateUrl: './experiece.component.html',
-  styleUrl: './experiece.component.css'
+  styleUrl: './experiece.component.css',
 })
 export class ExperieceComponent {
- experiences: Experience[] = [
+  experiences: Experience[] = [
+    {
+      title: 'Angular Frontend Developer Trainee',
+      company: 'Digital Egypt Pioneers Initiative (DEPI)',
+      period: '06/2025 – 12/2025',
+      description:
+        '• Completed a 200+ hour training program in Angular, TypeScript, and modern frontend technologies.\n' +
+        '• Built a fully functional Single Page Application (SPA) using Angular with modular architecture and routing.\n' +
+        '• Improved code maintainability by implementing reusable components and clean code practices.\n' +
+        '• Collaborated in Agile sprints to deliver project features within deadlines.',
+      technologies: ['Angular', 'TypeScript', 'RxJS', 'Bootstrap', 'HTML5', 'CSS3'],
+    },
+    {
+      title: 'Frontend Web Developer Trainee',
+      company: 'Information Technology Institute (ITI)',
+      period: '07/2025 – 08/2025',
+      description:
+        '• Completed a 120-hour intensive training in frontend development.\n' +
+        '• Developed 5+ responsive landing pages using HTML, CSS, and JavaScript.\n' +
+        '• Improved page performance by ~15% through CSS and JavaScript optimization.\n' +
+        '• Ensured cross-browser compatibility across multiple devices and screen sizes.',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Sass'],
+    },
     {
       title: 'Frontend Angular Developer Intern',
-      company: 'United Integrated Solutions',
-      period: '06/2024 – 10/2024 ',
+      company: 'United Integrated Solutions (UIS)',
+      period: '06/2024 – 10/2024',
       description:
-        'Worked on building responsive Angular applications, implementing UI components, and improving user experience through clean and efficient code.',
-      technologies: ['Angular','JavaScript', 'TypeScript', 'Bootstrap', 'HTML5', 'CSS3']
+        '• Developed 4+ Angular components using routing, data binding, and modular architecture.\n' +
+        '• Built 2 responsive web interfaces using HTML, CSS, Bootstrap, and JavaScript.\n' +
+        '• Reduced UI inconsistencies by ~30% by applying Angular best practices.\n' +
+        '• Enhanced user experience through responsive, user-friendly interface design.',
+      technologies: ['Angular', 'JavaScript', 'TypeScript', 'Bootstrap', 'HTML5', 'CSS3'],
     },
-    {
-      title: 'Frontend Angular Developer Trainee',
-      company: 'Digital Egypt Pioneers Initiative (DEPI)',
-      period: '06/2025 – Present',
-      description:
-        'Developing scalable front-end components using Angular, applying routing, services, and data binding techniques to build dynamic web applications.',
-      technologies: ['Angular 18','JavaScript', 'TypeScript', 'RxJS', 'Bootstrap','HTML5', 'CSS3',]
-    },
-    {
-      title: 'Frontend Angular Developer Trainee',
-      company: 'Information Technology Institute (ITI)',
-      period: '07/2025 – 08/2025 ',
-      description:
-        'Gained hands-on experience in Angular fundamentals, component communication, and responsive design using Bootstrap.',
-      technologies: ['JavaScript','JQuery','Sass', 'HTML5', 'CSS3', 'Bootstrap']
-    }
   ];
 }

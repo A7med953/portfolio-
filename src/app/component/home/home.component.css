@@ -9,10 +9,12 @@ section {
   position: relative;
 }
 
-img {
+.profile-img {
   width: 500px;
   height: 500px;
   object-fit: cover;
+  object-position: center ;
+
   border: 3px solid #0d4bdc;
   box-shadow: 0 0 20px rgba(13, 75, 220, 0.3);
 
@@ -64,8 +66,59 @@ button:nth-child(2) { animation-delay: 1.2s; }
   }
 }
 @media (max-width: 1024px) {
-  #home img {
+  .profile-img {
     width: 350px !important;
     height: 350px !important;
   }
+}
+
+.certificate-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.certificate-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(13, 75, 220, 0.2);
+  border-color: #0d4bdc;
+  background: rgba(13, 75, 220, 0.1);
+}
+
+.certificate-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.certificate-item:hover .certificate-img {
+  transform: scale(1.02);
+}
+
+#imagePreviewModal .modal-content {
+  background: none;
+  border: none;
+}
+
+#imagePreviewModal .full-img {
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.btn-close-white {
+  filter: invert(1) grayscale(100%) brightness(200%);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 1060;
 }

@@ -3,7 +3,7 @@
     <h2 class="section-title fw-bold mb-5 position-relative d-inline-block">Featured Projects</h2>
 
     <div class="row g-4">
-      <div class="col-md-6 col-lg-4" *ngFor="let project of projects">
+      <div class="col-md-6 col-lg-4" *ngFor="let project of projects | slice:0:projectsToShow">
         <div class="card h-100 border-0 shadow-sm hover-shadow">
           <img
             [src]="project.image"
@@ -37,15 +37,27 @@
       </div>
     </div>
     <div class="mt-5">
-<a 
-  class="btn btn-primary px-4 py-2 fw-semibold rounded-pill" 
-  href="https://github.com/A7med953"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  View More <i class="bi bi-arrow-right ms-2"></i>
-</a>
+<div class="mt-5 d-flex justify-content-center gap-3">
 
+  <!-- View More -->
+  <button
+    class="btn btn-primary px-4 py-2 fw-semibold rounded-pill"
+    (click)="showMoreProjects()"
+    *ngIf="projectsToShow < projects.length"
+  >
+    View More <i class="bi bi-arrow-right ms-2"></i>
+  </button>
+
+  <!-- View Less -->
+  <button
+    class="btn btn-outline-light px-4 py-2 fw-semibold rounded-pill"
+    (click)="showLessProjects()"
+    *ngIf="projectsToShow > 3"
+  >
+    <i class="bi bi-arrow-left me-2"></i> View Less
+  </button>
+
+</div>
     </div>
   </div>
 </section>
